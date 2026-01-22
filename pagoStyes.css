@@ -1,0 +1,205 @@
+/* Colores principales */
+:root {
+  --bg-primary: #130020;
+  --bg-secondary: #1a032b;
+  --bg-card: #1a032b;
+  --accent-primary: #40ff7a;
+  --accent-price: #f3a4ff;
+  --accent-warning: #f3a4ff;
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.5);
+}
+
+/* Body y fondo */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-light);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--bg-secondary);
+}
+
+.logo-primary {
+  color: var(--accent-primary);
+  margin-right: 2px;
+}
+
+.logo-secondary {
+  color: var(--text-light);
+}
+
+/* Contenido principal - MÁRGENES */
+.main-content {
+  padding: 4rem 0;
+}
+
+/* Container con márgenes laterales */
+.main-content .container {
+  max-width: 1200px;
+}
+
+/* Product-card con posición relativa para carrusel */
+.product-card {
+  background-color: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.col-lg-8 .product-card {
+  position: relative;
+}
+
+/* Precio */
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-price);
+}
+
+/* Plataforma select */
+.platform-select select {
+  background-color: transparent;
+  color: var(--text-light);
+  border: 2px solid #5f4b8b;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+}
+
+.platform-select select:focus {
+  box-shadow: none;
+  border-color: #8d5bff;
+  outline: none;
+}
+
+.platform-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Secciones */
+.purchase-section,
+.quantity-section {
+  font-size: 0.95rem;
+}
+
+.share-label {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.quantity-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.product-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* Botones */
+.quantity-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-btn {
+  background: linear-gradient(145deg, var(--accent-primary), #2eff6a);
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(64, 255, 122, 0.3);
+}
+
+.cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(64, 255, 122, 0.4);
+}
+
+.wishlist-btn {
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* CARRUSEL RESEÑAS - ULTRA PEQUEÑO Y PEGADO A LA DERECHA */
+.testimonials-mini {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 110px;
+  z-index: 5;
+}
+
+.review-mini {
+  background-color: #2b1740;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.4rem;
+}
+
+.avatar-mini {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.review-name {
+  color: var(--text-light);
+  font-size: 0.65rem;
+  line-height: 1;
+  margin-bottom: 0.05rem;
+  font-weight: 600;
+}
+
+.stars-mini {
+  font-size: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .main-content {
+    padding: 3rem 0;
+  }
+  
+  .testimonials-mini {
+    width: 100px;
+    right: 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 2rem 1rem;
+  }
+  
+  .testimonials-mini {
+    display: none;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+  
+  .purchase-buttons {
+    flex-direction: column;
+  }
+}

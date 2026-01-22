@@ -155,5 +155,17 @@ body {
   flex-shrink: 0;
 }
 
+.product-detail {
+  border-radius: 24px;
+  overflow: hidden;
+  background: #130020;
+}
+
+.card {
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(64,255,122,0.2);
+}
+
+
 
 
