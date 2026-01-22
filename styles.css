@@ -109,3 +109,21 @@ body {
   justify-content: center;
   color: #00c46a;
 }
+
+
+.gamobot {
+  background-color: #40ff7a;
+  color: #130020;
+  padding: 10px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 1050;
+}
+
+.gamobot .icon {
+  font-size: 1.2rem;
+}
