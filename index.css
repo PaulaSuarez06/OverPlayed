@@ -361,6 +361,7 @@ input:nth-of-type(5):checked~main#carousel {
 .green-nav .nav-link:hover::before,
 .green-nav .nav-link:hover::after {
     width: 100%;
+    color: white;
 }
 
 /* Activo (Ofertas) */
