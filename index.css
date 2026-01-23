@@ -347,13 +347,14 @@ input:nth-of-type(5):checked~main#carousel {
 .green-nav .nav-link:hover::before,
 .green-nav .nav-link:hover::after {
     width: 100%;
-
+    color: white;
 }
 
 /* Activo (Ofertas) */
 .green-nav .nav-link.active::before,
 .green-nav .nav-link.active::after {
     width: 100%;
+    color: white;
 }
 
 #color-barra-segundaria {
@@ -524,4 +525,21 @@ input:nth-of-type(5):checked~main#carousel {
 
 .gamebot-fab:hover .gamebot-avatar {
     transform: translateY(-2px) scale(1.03);
+}
+
+/* CARDS DE OFERTAS -------------------------------------------------------------------------------------- */
+
+.card-img-wrapper {
+  height: 170px;   
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-badge {
+  background-color: #5c1bbf
 }
