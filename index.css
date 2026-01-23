@@ -356,7 +356,172 @@ input:nth-of-type(5):checked~main#carousel {
     width: 100%;
 }
 
-#color-barra-segundaria{
+#color-barra-segundaria {
     background-color: #DB009D;
     border-style: none;
+}
+
+/* =========================
+   FOOTER OVERPLAYED
+   ========================= */
+
+.footer-overplayed {
+    background: radial-gradient(1200px 600px at 50% 0%, rgba(185, 76, 255, .18), transparent 60%),
+        #120018;
+}
+
+/* Texto */
+.footer-desc {
+    color: rgba(255, 255, 255, .55);
+    font-size: .9rem;
+    line-height: 1.6;
+}
+
+/* Iconos CTA (arriba) */
+.footer-cta-icon {
+    font-size: 1.2rem;
+    color: #DB009D;
+}
+
+/* Títulos con subrayado verde */
+.footer-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: .5rem;
+    font-weight: 700;
+}
+
+.footer-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 44px;
+    height: 2px;
+    background: #DB009D;
+    border-radius: 2px;
+}
+
+/* Links */
+.footer-links li {
+    margin-bottom: .6rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, .55);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.footer-links a:hover {
+    color: #DB009D;
+}
+
+
+.footer-input {
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: #fff;
+}
+
+.footer-input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.footer-input:focus {
+    background: rgba(255, 255, 255, .06);
+    color: #fff;
+    border-color: rgba(219, 0, 157, .6);
+    box-shadow: 0 0 0 .2rem rgba(219, 0, 157, .12);
+}
+
+
+.footer-send-btn {
+    background: #DB009D;
+    color: #130020;
+    border: 0;
+}
+
+/* =========================
+    GLOW ICONS (solo CSS)
+   ========================= */
+.glow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: #fff;
+    text-decoration: none;
+
+    box-shadow:
+        2px 2px 8px rgba(0, 0, 0, .45),
+        inset 2px 2px 10px rgba(0, 0, 0, .35);
+
+    text-shadow:
+        0 0 18px rgba(64, 255, 122, .55),
+        0 0 36px rgba(185, 76, 255, .35);
+
+    animation: footerHue 3s linear infinite;
+    transition: transform .12s ease, background .12s ease;
+}
+
+.glow-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, .10);
+}
+
+.glow-btn i {
+    font-size: 1.2rem;
+}
+
+.delay-1 {
+    animation-delay: .25s;
+}
+
+.delay-2 {
+    animation-delay: .5s;
+}
+
+@keyframes footerHue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* =========================
+   GAMEBOT (solo imagen)
+   ========================= */
+.gamebot-fab {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* tamaño del robot */
+.gamebot-avatar {
+    width: 70px;
+    /* cambia esto si lo quieres más grande/pequeño */
+    height: 70px;
+    object-fit: contain;
+    display: block;
+
+    /* sombra para que destaque */
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.55));
+
+    /* animación */
+    transition: transform 0.15s ease;
+}
+
+.gamebot-fab:hover .gamebot-avatar {
+    transform: translateY(-2px) scale(1.03);
 }
