@@ -2,249 +2,370 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href=""
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ofertas.css">
 
-  <title>OverPlayed - FC26</title>
+    <title>OverPlayed - FC26</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="barra.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="barra.css">
 
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <!-- Logo / Marca -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="./img/logo_modo_oscuro_rosa.png" alt="OverPlayed Logo" width="170">
-      </a>
-
-      <!-- Botón hamburguesa móvil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Contenido colapsable -->
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <!-- Menú centrado -->
-        <!-- Centro (plataformas + buscador) -->
-        <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
-          <div class="platform-bar">
-            <a class="platform-item active pc" href="#" title="PC">
-              <i class="bi bi-pc-display"></i>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <!-- Logo / Marca -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./img/logo_modo_oscuro_rosa.png" alt="OverPlayed Logo" width="170">
             </a>
 
-            <span class="platform-sep"></span>
-
-            <a class="platform-item playstation" href="#" title="PlayStation">
-              <i class="bi bi-playstation"></i>
-            </a>
-
-            <span class="platform-sep"></span>
-
-            <a class="platform-item xbox" href="#" title="Xbox">
-              <i class="bi bi-xbox"></i>
-            </a>
-
-            <span class="platform-sep"></span>
-
-            <a class="platform-item nintendo" href="#" title="Nintendo">
-              <i class="bi bi-nintendo-switch"></i>
-            </a>
-
-            <span class="platform-sep"></span>
-
-            <div class="platform-search">
-              <i class="bi bi-search"></i>
-              <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Iconos derecha -->
-        <ul class="navbar-nav ms-lg-3">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-cart fs-4"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--CUERPO-->
-
-<div class="container my-5">
-  <div class="row g-4">
-
-    <!-- CARD HORIZONTAL -->
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="card bg-dark text-white border-0 rounded-4 h-100">
-        <div class="row g-0 h-100">
-
-          <!-- IMAGEN -->
-          <div class="col-5 position-relative">
-            <img src="img/juego1.jpg" class="img-fluid h-100 rounded-start-4" alt="Juego">
-
-            <span class="badge position-absolute bottom-0 start-0 m-2 fs-6 discount-badge">
-              -40%
-            </span>
-          </div>
-
-          <!-- TEXTO -->
-          <div class="col-7 d-flex align-items-center">
-            <div class="card-body">
-              <h6 class="card-title mb-2">Demon Story: Time Stranger</h6>
-              <p class="card-text text-secondary small mb-0">
-                Acción · Aventura
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- DUPLICA ESTA CARD -->
-
-
-
-
-  <!--FIN CUERPO-->
-  <!-- BOTÓN GAMEBOT -->
-<button class="gamebot-fab position-fixed bottom-0 end-0 mb-3 me-3" type="button" aria-label="Gamebot">
-  <img src="./img/Gamebot_rosa.png" alt="Gamebot" class="gamebot-avatar">
-</button>
-
-
-  <!-- FOOTER -->
-  <footer class="footer-section footer-overplayed">
-    <div class="container py-4">
-
-      <!-- TOP CONTACT (3 bloques) -->
-      <div class="row g-4 py-3 align-items-center border-bottom border-white border-opacity-25">
-
-        <div class="col-md-4">
-          <div class="d-flex align-items-center gap-3">
-            <i class="bi bi-geo-alt-fill footer-cta-icon"></i>
-            <div>
-              <div class="fw-semibold text-white">Encuéntranos</div>
-              <div class="text-white-50 small">Alcalá de Henares</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="d-flex align-items-center gap-3">
-            <i class="bi bi-telephone-fill footer-cta-icon"></i>
-            <div>
-              <div class="fw-semibold text-white">Llámanos</div>
-              <div class="text-white-50 small">999 999 999</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="d-flex align-items-center gap-3">
-            <i class="bi bi-envelope-fill footer-cta-icon"></i>
-            <div>
-              <div class="fw-semibold text-white">Escríbenos</div>
-              <div class="text-white-50 small">overplayed@info.com</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- MAIN CONTENT -->
-      <div class="row gy-4 pt-4 pb-3">
-
-        <!-- LEFT: text + social -->
-        <div class="col-lg-4">
-          <p class="footer-desc mb-3">
-            OverPlayed: videojuegos, noticias, guías y ofertas diarias.
-            Únete a nuestra comunidad y no te pierdas ninguna novedad.
-          </p>
-
-          <div class="fw-semibold text-white mb-2">Síguenos</div>
-
-          <div class="d-flex gap-2">
-            <a href="#" class="glow-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="glow-btn delay-1" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="glow-btn delay-2" aria-label="Google"><i class="bi bi-google"></i></a>
-          </div>
-        </div>
-
-        <!-- MIDDLE: links -->
-        <div class="col-lg-4 col-md-6">
-          <h6 class="footer-title text-white mb-3">Enlaces útiles</h6>
-
-          <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled m-0 footer-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-              </ul>
-            </div>
-
-            <div class="col-6">
-              <ul class="list-unstyled m-0 footer-links">
-                <li><a href="#">Equipo</a></li>
-                <li><a href="#">Últimas noticias</a></li>
-                <li><a href="#">Soporte</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: subscribe -->
-        <div class="col-lg-4 col-md-6">
-          <h6 class="footer-title text-white mb-3">Suscríbete</h6>
-
-          <p class="footer-desc mb-3">
-            No te pierdas ofertas y novedades. Suscríbete:
-          </p>
-
-          <div class="input-group">
-            <input type="email" class="form-control footer-input" placeholder="Correo electrónico"
-              aria-label="Correo electrónico">
-            <button class="btn footer-send-btn" type="button" aria-label="Enviar">
-              <i class="bi bi-send-fill"></i>
+            <!-- Botón hamburguesa móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Menú centrado -->
+                <!-- Centro (plataformas + buscador) -->
+                <div class="mx-lg-auto my-3 my-lg-0 d-flex justify-content-center w-100">
+                    <div class="platform-bar">
+                        <a class="platform-item active pc" href="#" title="PC">
+                            <i class="bi bi-pc-display"></i>
+                        </a>
+
+                        <span class="platform-sep"></span>
+
+                        <a class="platform-item playstation" href="#" title="PlayStation">
+                            <i class="bi bi-playstation"></i>
+                        </a>
+
+                        <span class="platform-sep"></span>
+
+                        <a class="platform-item xbox" href="#" title="Xbox">
+                            <i class="bi bi-xbox"></i>
+                        </a>
+
+                        <span class="platform-sep"></span>
+
+                        <a class="platform-item nintendo" href="#" title="Nintendo">
+                            <i class="bi bi-nintendo-switch"></i>
+                        </a>
+
+                        <span class="platform-sep"></span>
+
+                        <div class="platform-search">
+                            <i class="bi bi-search"></i>
+                            <input type="search" class="platform-input" placeholder="Buscar" aria-label="Buscar">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Iconos derecha -->
+                <ul class="navbar-nav ms-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart fs-4"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-heart fs-4"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person fs-4"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-      </div>
+    <!--CUERPO-->
 
-      <hr class="border-white border-opacity-25 my-3">
+    <div class="container my-5">
+        <div class="row row-cols-5 g-4">
 
-      <!-- COPYRIGHT -->
-      <div class="text-center text-white-50 small pb-2">
-        © 2025 OverPlayed. Todos los derechos reservados.
-      </div>
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+                    
+                    <div class="card-img-wrapper">
+                        <a href="pago.html">
+                            <img src="img/fifa26.webp" alt="Juego">
+                        </a>
+                        
+                    </div>
 
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -40%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/NoImNotAHuman.webp" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -35%
+                    </span>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/silksong.avif" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -15%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/jurassic-world-evolution-3.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -20%
+                    </span>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/Le-Mans-Ultimate.webp" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -30%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/silentHill.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -25%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/sims4.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -55%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/escapeFromDuckov.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -10%
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/barbie.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -42%
+                    </span>
+
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="col">
+                <div class="card border-0 bg-dark rounded-4 overflow-hidden position-relative">
+
+                    <div class="card-img-wrapper">
+                        <img src="img/supermarketSimulator.jpg" alt="Juego">
+                    </div>
+
+                    <span class="badge position-absolute bottom-0 end-0 mb-3 me-3 fs-6 discount-badge">
+                        -55%
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-  </footer>
 
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--FIN CUERPO-->
+    <!-- BOTÓN GAMEBOT -->
+    <button class="gamebot-fab position-fixed bottom-0 end-0 mb-3 me-3" type="button" aria-label="Gamebot">
+        <img src="./img/Gamebot_rosa.png" alt="Gamebot" class="gamebot-avatar">
+    </button>
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section footer-overplayed">
+        <div class="container py-4">
+
+            <!-- TOP CONTACT (3 bloques) -->
+            <div class="row g-4 py-3 align-items-center border-bottom border-white border-opacity-25">
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-geo-alt-fill footer-cta-icon"></i>
+                        <div>
+                            <div class="fw-semibold text-white">Encuéntranos</div>
+                            <div class="text-white-50 small">Alcalá de Henares</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-telephone-fill footer-cta-icon"></i>
+                        <div>
+                            <div class="fw-semibold text-white">Llámanos</div>
+                            <div class="text-white-50 small">999 999 999</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-envelope-fill footer-cta-icon"></i>
+                        <div>
+                            <div class="fw-semibold text-white">Escríbenos</div>
+                            <div class="text-white-50 small">overplayed@info.com</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="row gy-4 pt-4 pb-3">
+
+                <!-- LEFT: text + social -->
+                <div class="col-lg-4">
+                    <p class="footer-desc mb-3">
+                        OverPlayed: videojuegos, noticias, guías y ofertas diarias.
+                        Únete a nuestra comunidad y no te pierdas ninguna novedad.
+                    </p>
+
+                    <div class="fw-semibold text-white mb-2">Síguenos</div>
+
+                    <div class="d-flex gap-2">
+                        <a href="#" class="glow-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="glow-btn delay-1" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="glow-btn delay-2" aria-label="Google"><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+
+                <!-- MIDDLE: links -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-title text-white mb-3">Enlaces útiles</h6>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled m-0 footer-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <ul class="list-unstyled m-0 footer-links">
+                                <li><a href="#">Equipo</a></li>
+                                <li><a href="#">Últimas noticias</a></li>
+                                <li><a href="#">Soporte</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: subscribe -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-title text-white mb-3">Suscríbete</h6>
+
+                    <p class="footer-desc mb-3">
+                        No te pierdas ofertas y novedades. Suscríbete:
+                    </p>
+
+                    <div class="input-group">
+                        <input type="email" class="form-control footer-input" placeholder="Correo electrónico"
+                            aria-label="Correo electrónico">
+                        <button class="btn footer-send-btn" type="button" aria-label="Enviar">
+                            <i class="bi bi-send-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-white border-opacity-25 my-3">
+
+            <!-- COPYRIGHT -->
+            <div class="text-center text-white-50 small pb-2">
+                © 2025 OverPlayed. Todos los derechos reservados.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
